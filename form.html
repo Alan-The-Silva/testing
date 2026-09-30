@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Form</title>
+	<style>
+		body {
+			@media (min-width: 800px) {
+				background-color: yellow;
+			}
+
+			@media (max-width: 600px) {
+				background-color: purple;
+			}
+
+		}
+
+		button {
+			width: 100px;
+			height: 25px;
+			font-size: 10px;
+			padding: 5px;
+			background-color: springgreen;
+		}
+
+		button:hover {
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<section>
+		    <input type="text" placeholder="Full name" name="full_name">
+		    <input type="password" placeholder="Password" name="password">
+		    <button type="submit">Submit</button>
+	    </section>
+
+		<section>
+			Favorite color?
+			<input type="radio" name="color" value="Blue"> Blue
+			<input type="radio" name="color" value="Green"> Green
+			<input type="radio" name="color" value="Yellow"> Yello
+			<input type="radio" name="color" value="Others"> Others
+		</section>
+
+		<section>
+			<input type="" name="country" list="countries" placeholder="Country">
+			<datalist id="countries">
+				<option value="Rwanda">Rwanda</option>
+				<option value="Uganda">Uganda</option>
+				<option value="Burundi">Burundi</option>
+				<option value="Tanzania">Tanzania</option>
+			</datalist>
+		</section>
+	</form>
+
+</body>
+</html>

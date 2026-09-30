@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/scss" href="styles.scss"
+	<title>lists</title>
+</head>
+
+<style>
+	ol li {
+		color: blue;
+	}
+
+	#container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#container > div {
+		background-color: springgreen;
+		font-size: 20px;
+		margin: 20px;
+		padding: 20px;
+		width: 150px;
+	}
+
+	#grid {
+		background-color: green;
+		display: grid;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		grid-template-columns: 200px 200px 200px auto;
+	}
+
+	.gred-item {
+		background-color: blue;
+		font-size: 20px;
+		padding: 20px;
+		text-align: 20px;
+	}
+	
+</style>
+<body>
+	An unordered list:
+	<ul>
+		<li>One Item</li>
+		<li>Another Item</li>
+		<li>Yet Another Item</li>
+
+		<ol>
+		    <li>First Item</li>
+		    <li>Second Item</li>
+		    <li>Third Item</li>
+	    </ol>
+	</ul>
+
+	<a href="home_page.html">Click Here</a>
+
+	<ul>
+		<li><a href="https://google.com">Google</a></li>
+		<li><a href="https://facebook.com">Facebook</a></li>
+		<li><a href="https://instagram.com">Instagram</a></li>
+	</ul>
+
+	<section id="container">
+		<div>1.This is some sample text inside of a div to demo</div>
+		<div>2.This is some sample text inside of a div to demo</div>
+		<div>3.This is some sample text inside of a div to demo</div>
+		<div>4.This is some sample text inside of a div to demo</div>
+		<div>5.This is some sample text inside of a div to demo</div>
+		<div>6.This is some sample text inside of a div to demo</div>
+		<div>7.This is some sample text inside of a div to demo</div>
+		<div>8.This is some sample text inside of a div to demo</div>
+	</section>
+
+	<section id="grid">
+		<div class="grid-item">1</div>
+		<div class="grid-item">2</div>
+		<div class="grid-item">3</div>
+		<div class="grid-item">4</div>
+		<div class="grid-item">5</div>
+		<div class="grid-item">6</div>
+		<div class="grid-item">7</div>
+		<div class="grid-item">8</div>
+		<div class="grid-item">9</div>
+		<div class="grid-item">10</div>
+	</section>
+
+
+
+</body>
+</html>
